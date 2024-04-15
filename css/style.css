@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jomhuria&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+.backGround {
+    height: 100vh;
+    background: url("../img/backGround.png") no-repeat center/cover;
+}
+
+.backCover {
+    background: #707070;
+    height: 100vh;
+    opacity: 50%;
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 70px;
+    padding-right: 50px;
+
+}
+
+.nav a {
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
