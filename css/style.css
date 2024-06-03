@@ -63,16 +63,15 @@ section {
 }
 .text1 {
     color: #fff;
-    font-size: 130px;
+    font-size: 10rem;
     
    
 }
 .text2 {
     color: #fff;
-    font-size: 130px;
+    font-size: 10rem;
     display: flex;
     justify-content: right;
-    padding-top: 80px;
     
 }
 .textWrap {
@@ -80,6 +79,8 @@ section {
     height: 80vh;
     width: 100%;
     position: fixed;
+    line-height: 250px;
+    transform: translateY(300px);
 }
 
 /* page 2 */
@@ -114,6 +115,29 @@ section {
     animation: 4s ease 0s infinite normal none running progress;
 }
 
+.linkWrap {
+   
+}
+.link {
+    width: 300px;
+    height: 40px;
+}
+.link a {
+    background: #333;
+    border-radius: 30px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+.link a:hover {
+    background: #ebebeb;
+    border-radius: 30px;
+    color: #333;
+}
+
 .slideTitle {
     font-size: 30px;
     padding-left: 20%;
@@ -125,10 +149,16 @@ section {
     width: 500%;
     animation: slide 20s infinite
 }
+.skillIcon {
+  height: 100%;
+}
 .text {
     font-size: 4.5rem;
     width: 100%;
     padding-left: 4%;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 @keyframes progress {
@@ -171,7 +201,29 @@ section {
     95% {
         margin-left: -400%;
     }
-    100% {
+    to {
         margin-left: 0;
+    }
+}
+
+/* media */
+@media (max-width: 420px) {
+    .textWrap .text1 {
+        white-space: pre-line;
+    }
+    .textWrap {
+        line-height: 60px;
+        transform: translateY(-1rem);
+        height: 30vh;
+    }
+    .textWrap .text1 {
+        font-size: 4rem;
+    }
+    .textWrap .text2 {
+        font-size: 3rem;
+        padding-top: 30px;
+    }
+    .text {
+        font-size: 4rem;
     }
 }

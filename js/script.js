@@ -1,11 +1,13 @@
+let innerWidth = window.screen.width;
+
 let tween = gsap.to('.text1', {
-    x: 2019,
+    x: innerWidth,
     
 
 })
 let tween2 = gsap.to(".text2", {
-    x: -2019,
-})
+    x: -innerWidth,
+})  
 
 ScrollTrigger.create({
     trigger: ".textWrap",
@@ -25,5 +27,7 @@ ScrollTrigger.create({
 })
 
 gsap.set('.textWrap',{
-    y: 300,
+    // y: 300,
 })
+
+
