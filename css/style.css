@@ -188,8 +188,8 @@ section {
 .introduceText p {
     font-size: 20px;
     font-family: "Rowdies", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-weight: 700;
+    font-style: normal;
 }
 
 @keyframes progress {
@@ -279,8 +279,24 @@ section {
         left: 80px;
     }
 
+    .text:nth-child(1) img {
+        width: 80px;
+    }
+
     .text img {
         position: relative;
-        left: 20px;
+        left: 25%;
+        width: 50px;
+        height: 50px;
     }
+    .linkWrap {
+        padding-left: 10%;
+    }
+    .introduceBox {
+        height: 800px;
+    }
+    .introduce {
+        height: 1200px;
+    }
+
 }
