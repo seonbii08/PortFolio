@@ -9,9 +9,17 @@ let tween2 = gsap.to(".text2", {
     x: -innerWidth,
 })  
 
+let backGroundColor = gsap.to(".backGround", {
+    onStart: () => {
+        document.querySelector(".backGround").style.opacity = 0;
+    },
+    backgroundColor: "red",
+    toggleActions: "restart none reverse none",
+}) 
+
 ScrollTrigger.create({
     trigger: ".textWrap",
-    markers: true,
+    // markers: true,
     start: "top 30%",
     end: "bottom center",
     animation: tween,
@@ -19,15 +27,20 @@ ScrollTrigger.create({
 })
 ScrollTrigger.create({
     trigger: ".textWrap",
-    markers: true,
+    // markers: true,
     start: "top 30%",
     end: "bottom center",
     animation: tween2,
     scrub: 2,
 })
 
-gsap.set('.textWrap',{
-    // y: 300,
+ScrollTrigger.create({
+    trigger: ".portFolioWrap",
+    markers: true,
+    start: "top 30%",
+    end: "bottom center",
+    animation: backGroundColor,
 })
+
 
 
