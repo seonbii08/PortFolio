@@ -248,10 +248,39 @@ section {
     }
 }
 
+/* career */
+.careerWrap {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    width: 100%;
+}
+.career {
+    
+    width: 70%;
+   
+}
+.career .title {
+    font-size: 50px;
+    color: #fff;
+    
+    height: 100px;
+    width: 250px;
+    text-align: center;
+}
+
 /* portFolioWrap */
+.portFolioWrap {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
 
 .portFolio {
-    
+    background: #fff;
+    height: 100%;
+    width: 80%;
 }
 .portFolio img {
     width: 30%;
